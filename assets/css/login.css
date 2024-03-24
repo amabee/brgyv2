@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+body {
+  background-color: #e8edf2;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  div.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 50px 50px -50px darkslategray;
+  }
+
+  div.container div.myform {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  div.container div.myform h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  div.container div.myform input {
+    border: none;
+    outline: none;
+    border-radius: 0;
+    width: 100%;
+    border-bottom: 2px solid #1c1c1e;
+    margin-bottom: 10px;
+    padding: 5px 0;
+    font-size: 12px;
+  }
+
+  div.container div.myform button {
+    font-size: 12px;
+    padding: 4px 10px;
+  }
+
+  div.container div.image {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  div.container div.image img {
+    width: 100%;
+    transform: none; /* Reset transform for mobile */
+  }
+}
+
+/* Desktop Styles */
+div.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  padding: 30px;
+  box-shadow: 0 50px 50px -50px darkslategray;
+}
+
+div.container div.myform {
+  width: 100%;
+  margin-right: 0;
+}
+
+div.container div.myform h1 {
+  margin-bottom: 20px;
+}
+
+div.container div.myform input {
+  border: none;
+  outline: none;
+  border-radius: 0;
+  width: 100%;
+  border-bottom: 2px solid #1c1c1e;
+  margin-bottom: 15px;
+  padding: 7px 0;
+  font-size: 14px;
+}
+
+div.container div.myform button {
+  font-size: 14px;
+  padding: 5px 12px;
+}
+
+div.container div.image {
+  margin-left: 30px;
+}
+
+div.container div.image img {
+  width: auto;
+  max-width: 100%;
+  transform: scale(1.5); /* Adjust the scale as needed for desktop */
+}
